@@ -21,3 +21,151 @@ h2{
   font-weight: 700;
   font-family: roboto, trebuchet, arial, verdana;
 }
+
+.container{
+  border: dotted #cccccc;
+  width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+.container::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.logo{
+  float: left;
+  margin-right: 20px;
+  width: 160px;
+  border: dotted #cccccc;
+}
+
+.user-block{
+  float: right;
+  width: 115px;
+  border: dotted #cccccc;
+}
+
+.main-navigation{
+  float: left;
+  width: 620px;
+  padding-left: 180px;
+  border: dotted #cccccc;
+}
+.main-navigation li{
+  float: left;
+  margin-right: 30px;
+}
+
+.sliders{
+  float: left;
+}
+
+.sliders:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.index-content-left{
+  float: left;
+  width: 380px;
+  border: dotted #cccccc;
+}
+
+.index-content-right{
+  float: right;
+  border: dotted #cccccc;
+  width: 760px;
+}
+
+.web-sites{
+  float: left;
+  width: 300px;
+  border: dotted #cccccc;
+  margin-right: 100px;
+}
+
+.applications{
+  float: left;
+  width: 300px;
+  border: dotted #cccccc;
+  margin-right: 100px;
+}
+
+.presentations{
+  float: right;
+  width: 300px;
+  border: dotted #cccccc;
+  margin-right: 60px;
+}
+
+.advantages-left{
+  float: left;
+  width: 660px;
+  margin-top: 164px;
+  border: dotted #cccccc;
+}
+
+.advantages-right{
+  float: right;;
+  width: 360px;
+  margin-top: 164px;
+  border: dotted #cccccc;
+}
+
+.item{
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.logos-list{
+margin-top: 77px;
+border: dotted #cccccc;
+}
+
+.logos-list::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.logos-item{
+  float: left;
+  width: 260px;
+  margin-left: 40px;
+}
+.logos-item:last-child{
+  float: right;
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+.container-address{
+  border: dotted #cccccc;
+}
+
+.container-address::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+img{
+  margin: 0 auto;
+}
+
+.footer-social{
+  float: left;
+  width: 380px;
+  margin-right: 400px;
+  border: dotted #cccccc;
+}
+
+.footer-features{
+  float: right;
+  width: 760px;
+  border: dotted #cccccc;
+}
