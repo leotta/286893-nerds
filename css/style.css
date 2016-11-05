@@ -31,8 +31,8 @@ h2{
 .container{
   outline: solid #cccccc;
   width: 1200px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 .clearfix::after {
@@ -51,8 +51,8 @@ h2{
 .user-block{
   float: right;
   width: 141px;
+  padding-top: 30px;
   outline: solid #cccccc;
-  margin-top: 30px;
 }
 .user-block a{
   list-style: none;
@@ -66,8 +66,8 @@ h2{
   float: left;
   width: 640px;
   padding-left: 20px;
+  padding-top: 30px;
   outline: solid #cccccc;
-  margin-top: 30px;
 }
 
 .main-navigation a{
@@ -83,7 +83,9 @@ h2{
 }
 .main-navigation ul{
   text-decoration: none;
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .header-top{
@@ -157,6 +159,15 @@ h2{
   outline: solid #cccccc;
 }
 
+.item span{
+font-size: 45px;
+font-weight: bold;
+}
+
+.item sup{
+  font-size: 25px;
+}
+
 .item{
   display: inline-block;
   width: 100px;
@@ -181,7 +192,7 @@ margin-bottom: 80px;
   margin-right: 40px;
 }
 
-.container-address{
+.wrap{
   outline: solid #cccccc;
   margin-bottom: 70px;
 }
