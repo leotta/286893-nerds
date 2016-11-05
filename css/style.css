@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
   line-height: 24px;
@@ -23,13 +29,13 @@ h2{
 }
 
 .container{
-  border: dotted #cccccc;
+  outline: solid #cccccc;
   width: 1200px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
 }
-.container::after {
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
@@ -37,82 +43,118 @@ h2{
 
 .logo{
   float: left;
-  margin-right: 20px;
+  margin-right: 180px;
   width: 160px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
 }
 
 .user-block{
   float: right;
-  width: 115px;
-  border: dotted #cccccc;
+  width: 141px;
+  outline: solid #cccccc;
+  margin-top: 30px;
+}
+.user-block a{
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 26px;
 }
 
 .main-navigation{
   float: left;
-  width: 620px;
-  padding-left: 180px;
-  border: dotted #cccccc;
+  width: 640px;
+  padding-left: 20px;
+  outline: solid #cccccc;
+  margin-top: 30px;
 }
+
+.main-navigation a{
+  color: #000;
+  text-decoration: none;
+}
+
 .main-navigation li{
   float: left;
   margin-right: 30px;
+  text-transform: uppercase;
+  list-style: none;
+}
+.main-navigation ul{
+  text-decoration: none;
+
+}
+
+.header-top{
+  margin-bottom: 85px;
+  outline: solid #cccccc;
 }
 
 .sliders{
   float: left;
+  margin-bottom: 80px;
 }
 
-.sliders:after {
-    display: table;
-    content: "";
-    clear: both;
+.slider-name{
+  font-size: 55px;
+  color: #000;
+  line-height: 55px;
 }
+
 .index-content-left{
   float: left;
   width: 380px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
 }
 
 .index-content-right{
   float: right;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
   width: 760px;
 }
 
+.services{
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
+}
 .web-sites{
   float: left;
   width: 300px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
   margin-right: 100px;
 }
 
 .applications{
   float: left;
   width: 300px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
   margin-right: 100px;
 }
 
 .presentations{
   float: right;
   width: 300px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
   margin-right: 60px;
+}
+
+.advantages{
+  padding-top: 80px;
+  padding-bottom: 78px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .advantages-left{
   float: left;
   width: 660px;
-  margin-top: 164px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
 }
 
 .advantages-right{
-  float: right;;
+  float: right;
   width: 360px;
-  margin-top: 164px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
 }
 
 .item{
@@ -122,14 +164,9 @@ h2{
 }
 
 .logos-list{
-margin-top: 77px;
-border: dotted #cccccc;
-}
-
-.logos-list::after {
-    display: table;
-    content: "";
-    clear: both;
+outline: solid #cccccc;
+border-bottom: 2px solid #eeeeee;
+margin-bottom: 80px;
 }
 
 .logos-item{
@@ -137,6 +174,7 @@ border: dotted #cccccc;
   width: 260px;
   margin-left: 40px;
 }
+
 .logos-item:last-child{
   float: right;
   margin-left: 0px;
@@ -144,28 +182,24 @@ border: dotted #cccccc;
 }
 
 .container-address{
-  border: dotted #cccccc;
-}
-
-.container-address::after {
-    display: table;
-    content: "";
-    clear: both;
-}
-
-img{
-  margin: 0 auto;
+  outline: solid #cccccc;
+  margin-bottom: 70px;
 }
 
 .footer-social{
   float: left;
   width: 380px;
-  margin-right: 400px;
-  border: dotted #cccccc;
+  margin-right: 20px;
+  outline: solid #cccccc;
 }
 
 .footer-features{
   float: right;
   width: 760px;
-  border: dotted #cccccc;
+  outline: solid #cccccc;
+}
+
+.footer-features b{
+  font-size: 36px;
+  color: #000;
 }
