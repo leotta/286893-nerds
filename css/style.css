@@ -18,6 +18,7 @@ h1{
   color: #000;
   font-weight: 700;
   font-family: roboto, trebuchet, arial, verdana;
+  margin: 0;
 }
 
 h2{
@@ -212,5 +213,64 @@ margin-bottom: 80px;
 
 .footer-features b{
   font-size: 36px;
+  color: #000;
+}
+
+.filter{
+  float: left;
+  width: 260px;
+  outline: solid #cccccc;
+  margin-right: 100px;
+}
+
+.sort-group{
+  float: left;
+  outline: solid #cccccc;
+  margin-bottom: 60px;
+  margin-left: 40px;
+}
+
+.sort-element{
+  float: right;
+  margin-left: 270px;
+}
+
+.sort-element a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 30px;
+}
+
+.templates{
+  outline: solid #cccccc;
+}
+
+.templates-item{
+  float: left;
+  margin-left: 40px;
+  width: 360px;
+  margin-bottom: 36px;
+}
+
+.main-container{
+  float: right;
+  width: 800px;
+  outline: solid #cccccc;
+}
+
+.title{
+  margin-bottom: 177px;
+}
+
+.pagination{
+  float: left;
+  padding-top: 24px;
+  padding-bottom: 60px;
+}
+
+.pagination a{
+  text-decoration: none;
+  text-transform: uppercase;
   color: #000;
 }
