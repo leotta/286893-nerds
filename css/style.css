@@ -254,6 +254,26 @@ margin-bottom: 80px;
   margin-right: 100px;
 }
 
+.filter-price{
+  margin-bottom: 56px;
+}
+
+.grid-group{
+  margin-bottom: 44px;
+}
+
+.features-group{
+  margin-bottom: 50px;
+}
+
+.filter span{
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
 .sort-group{
   float: left;
   outline: solid #cccccc;
