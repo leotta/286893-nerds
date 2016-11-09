@@ -10,6 +10,7 @@ body {
   color: #283136;
   font-weight: normal;
   font-family: roboto, trebuchet, arial, verdana;
+  min-width: 1200px;
 }
 
 .sprite {
@@ -46,7 +47,7 @@ h1{
   font-size: 55px;
   line-height: 55px;
   color: #000;
-  font-weight: 700;
+  font-weight: 500;
   font-family: roboto, trebuchet, arial, verdana;
   margin: 0;
 }
