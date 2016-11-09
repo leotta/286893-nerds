@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  font-weight: normal;
+  font-weight: 400;
   font-family: roboto, trebuchet, arial, verdana;
   min-width: 1200px;
 }
@@ -56,7 +56,7 @@ h2{
   font-size: 45px;
   line-height: 45px;
   color: #000;
-  font-weight: 700;
+  font-weight: 500;
   font-family: roboto, trebuchet, arial, verdana;
 }
 
@@ -135,6 +135,7 @@ h2{
   font-size: 55px;
   color: #000;
   line-height: 55px;
+  font-weight: 500;
 }
 
 .index-content-left{
