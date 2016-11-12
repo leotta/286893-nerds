@@ -440,6 +440,7 @@ margin-bottom: 80px;
 }
 
 .social-btn{
+  position: relative;
   display: inline-block;
   width: 78px;
   height: 78px;
@@ -448,19 +449,55 @@ margin-bottom: 80px;
   text-decoration: none;
   font-size: 0;
   vertical-align: top;
-  background: #e1e1e1 url("..img/sprite.png") no-repeat center;
+  background: #e1e1e1 /*url("../img/sprite.png") no-repeat center*/;
 }
 
-.social-btn-vk{
-  background-position: -10px -128px;
+.social-btn-vk::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 50%;
+  margin-left: -14px;
+  width: 26px;
+  height: 16px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -10px -127px;
 }
 
-.social-btn-fb{
+.social-btn-fb::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  left: 50%;
+  margin-left: -6px;
+  width: 12px;
+  height: 22px;
+  background: url("../img/sprite.png") no-repeat;
   background-position: -10px -45px;
 }
 
-.social-btn-inst{
+.social-btn-inst::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  width: 22px;
+  height: 22px;
+  background: url("../img/sprite.png") no-repeat;
   background-position: -10px -87px;
+}
+
+.social-btn:hover{
+  color: #e74246;
+}
+
+.social-btn:active{
+  background-color: #d7373b;
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.1)
 }
 
 .footer-features{
