@@ -58,15 +58,17 @@ h2{
   color: #000;
   font-weight: 500;
   font-family: roboto, trebuchet, arial, verdana;
+  margin-top: 0;
+  margin-bottom: 33px;
 }
 
 .container{
-  outline: solid #cccccc;
   width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 }
+
 .clearfix::after {
     display: table;
     content: "";
@@ -77,21 +79,44 @@ h2{
   float: left;
   margin-right: 180px;
   width: 160px;
-  outline: solid #cccccc;
+  height: 65px;
+}
+
+.logo img{
+  display: block;
+  width: 160px;
+  height: 65px;
 }
 
 .user-block{
   float: right;
-  width: 141px;
+  max-width: 141px;
   padding-top: 30px;
-  outline: solid #cccccc;
+  padding-bottom: 11px;
 }
 .user-block a{
+  position: relative;
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 500;
   color: #000;
   margin-left: 66px;
+}
+
+.login:hover{
+  color: #fb565a;
+}
+
+.login::before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -40px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -10px -10px;
 }
 
 .main-navigation{
@@ -99,7 +124,7 @@ h2{
   width: 640px;
   padding-left: 20px;
   padding-top: 30px;
-  outline: solid #cccccc;
+  padding-bottom: 11px;
 }
 
 .main-navigation a{
@@ -108,9 +133,13 @@ h2{
   text-decoration: none;
 }
 
+.main-navigation a:hover{
+  color: #fb565a;
+}
+
 .main-navigation li{
   float: left;
-  margin-right: 30px;
+  margin-right: 48px;
   text-transform: uppercase;
   list-style: none;
 
@@ -122,13 +151,13 @@ h2{
 }
 
 .header-top{
-  margin-bottom: 85px;
-  outline: solid #cccccc;
+  margin-bottom: 56px;
 }
 
 .sliders{
   float: left;
   margin-bottom: 80px;
+  background-color: #eeeeee
 }
 
 .slider-name{
@@ -141,12 +170,10 @@ h2{
 .index-content-left{
   float: left;
   width: 515px;
-  outline: solid #cccccc;
 }
 
 .index-content-right{
   float: right;
-  outline: solid #cccccc;
   width: 760px;
 }
 
@@ -154,43 +181,153 @@ h2{
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
+
 .web-sites{
   float: left;
   width: 300px;
-  outline: solid #cccccc;
   margin-right: 100px;
+}
+
+.services h3{
+  color: #000;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 21px;
+}
+
+.services p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 3px;
+  vertical-align: top;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: roboto, trebuchet, arial, verdana;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fb565a;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active{
+  background-color: #e74246;
+}
+
+.btn.disabled,
+.btn:disabled{
+  cursor: default;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover{
+  background-color: #d7373b;
+}
+
+.btn.green{
+  background-color: #00ca74;
+}
+
+.btn.green:hover,
+.btn.green:active{
+  background-color: #00bc6c;
+}
+
+.btn.yellow{
+  background-color: #efc84a;
+}
+
+.btn.yellow:hover,
+.btn.yellow:active{
+  background-color: #eab534;
+}
+
+.presentations.btn{
+  background-color: #efc84a
 }
 
 .applications{
   float: left;
   width: 300px;
-  outline: solid #cccccc;
   margin-right: 100px;
 }
 
 .presentations{
   float: right;
   width: 300px;
-  outline: solid #cccccc;
   margin-right: 60px;
 }
 
 .advantages{
-  padding-top: 80px;
-  padding-bottom: 78px;
+  padding-top: 40px;
+  padding-bottom: 45px;
   border-bottom: 2px solid #eeeeee;
 }
 
 .advantages-left{
   float: left;
-  width: 660px;
-  outline: solid #cccccc;
+  width: 700px;
+  margin-top: 34px;
+}
+
+.advantages-left p{
+  width: 630px;
+}
+
+.advantages-left h4{
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.advantages-left ul{
+  padding-left: 36px;
+}
+
+.advantages-left li{
+  list-style: none;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.advantages-left li::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  position: absolute;
+  left: -36px;
+  top: 10px;
 }
 
 .advantages-right{
   float: right;
   width: 360px;
-  outline: solid #cccccc;
+}
+
+.advantages-right img{
+  width: 360px;
+  height: 208px;
+}
+
+.advantages-right h4{
+  text-transform: uppercase;
+  font-weight: 700px;
+  text-align: right;
+  padding-right: 18px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .item span{
@@ -202,28 +339,39 @@ font-weight: bold;
   font-size: 25px;
 }
 
+.item p{
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 18px;
+}
+
 .item{
   display: inline-block;
   width: 100px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .logos-list{
-outline: solid #cccccc;
 border-bottom: 2px solid #eeeeee;
 margin-bottom: 80px;
 }
 
 .logos-item{
   float: left;
-  width: 260px;
-  margin-left: 40px;
+  width: 280px;
 }
 
 .logos-item:last-child{
   float: right;
-  margin-left: 0px;
-  margin-right: 40px;
+  width: 280px;
+}
+
+.logos-item:nth-child(2){
+  width: 300px;
+}
+
+.logos-item:nth-child(3){
+  width: 300px;
 }
 
 .wrap{
@@ -313,7 +461,7 @@ margin-bottom: 80px;
 }
 
 .title{
-  margin-bottom: 157px;
+  margin-bottom: 137px;
   text-align: center;
   padding: 20px;
 }
