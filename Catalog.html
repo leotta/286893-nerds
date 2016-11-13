@@ -45,24 +45,29 @@
     <div class="container-inner clearfix">
       <div class="filter">
         <form action="#" method="get">
-          <div class="filter-price">
-            <span>Стоимость</span>
-            <label for="field-price-min">от</label>
-            <input type="text" name="price-min" id="field-price-min">
-            <label for="field-price-max">до</label>
-            <input type="text" name="price-max" id="field-price-max">
+          <div class="range-filter">
+            <span class="filter-title">Стоимость</span>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 0%; width: 70%">
+                </div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+            </div>
           </div>
           <div class="grid-group">
-            <span>Сетка</span>
-            <input type="radio" name="question-one" id="adaptive" value="Адаптивная" checked>
-            <label for="adaptive">Адаптивная</label>
-            <input type="radio" name="question-one" id="fix" value="Фиксированная">
-            <label for="fix">Фиксированная</label>
-            <input type="radio" name="question-one" id="rubber" value="Резиновая">
-            <label for="rubber">Резиновая</label>
+            <span class="filter-title">Сетка</span>
+            <label class="grid"><input type="radio" name="question-one" value="Адаптивная" checked><span class="filter-items">Адаптивная</span></label>
+            <label class="grid"><input type="radio" name="question-one" value="Фиксированная"><span class="filter-items">Фиксированная</span></label>
+            <label class="grid"><input type="radio" name="question-one" value="Резиновая"><span class="filter-items">Резиновая</span></label>
           </div>
           <div class="features-group">
-            <span>Особенности</span>
+            <span class="filter-title">Особенности</span>
             <input type="checkbox" name="slider" id="slider-field" checked>
             <label for="slider-field">Слайдер</label>
             <input type="checkbox" name="plus" id="plus-field">
@@ -74,7 +79,7 @@
             <input type="checkbox" name="basket" id="basket-field">
             <label for="basket-field">Корзина</label>
           </div>
-          <input type="submit" value="Показать">
+          <input class="btn filter-btn" type="submit" value="Показать">
         </form>
       </div>
       <div class="main-container clearfix">
@@ -144,16 +149,17 @@
         </section>
       </div>
     </div>
+    </div>
   </main>
   <div class="wrap">
     <div class="map">
-      <img src="img10.jpg" width="1440" height="416" alt="карта">
+      <img src="img/footer/map.jpg" width="1440" height="416" alt="карта">
       <div class="contacts-wrap container">
         <div class="contacts">
           <b>NЁRDS DESIGN STUDIO</b>
           <p>191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p>
-          <a href="+78122757575">+7 (812) 275-75-75</a>
-          <a href="#">Напишите нам</a>
+          <a class="tel" href="+78122757575">Тел. +7 (812) 275-75-75</a>
+          <a class="btn contact" href="#">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -165,8 +171,8 @@
       <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
     </section>
     <div class="footer-features">
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="social-title">Давайте дружить, это выгодно!</p>
+      <p class="social-sale">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
 </body>
