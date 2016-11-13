@@ -71,6 +71,7 @@ h2{
 
 .main-header{
   background: #eeeeee;
+  margin-bottom: 80px;
 }
 
 .clearfix::after {
@@ -159,13 +160,11 @@ h2{
   width: 1160px;
   height: 432px;
   margin: auto;
-  margin-bottom: 80px;
-  background-color: #eeeeee
 }
 
 .slider-controls{
   position: absolute;
-  bottom: 95px;
+  bottom: 98px;
   left: 50%;
   width: 200px;
   height: 18px;
@@ -191,7 +190,8 @@ background:#c1c1c1;
 }
 
 .slide-text{
-  width: 515px;
+  width: 520px;
+  padding-top: 78px;
 }
 
 .slides-title{
@@ -212,7 +212,7 @@ background:#c1c1c1;
   padding-right: 55px;
 }
 
-.slides{
+.slide{
   position: absolute;
   top: 0;
   left: 0;
@@ -221,8 +221,27 @@ background:#c1c1c1;
   overflow: hidden;
 }
 
-.slides:nth-child(1){
+.slide:nth-child(1){
   background-image: url("../img/header/sliders/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.slide{
+    display:none;
+}
+.slide:nth-child(3){
+    display:block;
+}
+
+.slide:nth-child(2){
+  background-image: url("../img/header/sliders/slider-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.slide:nth-child(3){
+  background-image: url("../img/header/sliders/slider-3.jpg");
   background-repeat: no-repeat;
   background-position: 100%;
 }
