@@ -79,23 +79,23 @@
             <input type="checkbox" name="basket" id="basket-field">
             <label for="basket-field">Корзина</label>
           </div>
-          <input class="btn filter-btn" type="submit" value="Показать">
+          <button class="btn filter-btn" type="submit"><span>Показать</span></button>
         </form>
       </div>
       <div class="main-container clearfix">
         <div class="sort-group clearfix">
-          <span>Сортировать</span>
+          <span>Сортировать:</span>
           <div class="sort-element">
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По названию</a>
+            <a class="triangle-sort-down" href="#"></a>
+            <a class="triangle-sort-up" href="#"></a>
           </div>
         </div>
         <section class="templates clearfix">
           <div class="templates-item">
             <div class="panel-browser">
-              <i></i>
-              <i></i>
               <i></i>
             </div>
             <img src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona">
@@ -108,8 +108,6 @@
           <div class="templates-item">
             <div class="panel-browser">
               <i></i>
-              <i></i>
-              <i></i>
             </div>
             <img src="img/catalog/img-pink.jpg" width="360" height="576" alt="Pink">
             <div class="templates-inner">
@@ -120,8 +118,6 @@
           </div>
           <div class="templates-item">
             <div class="panel-browser">
-              <i></i>
-              <i></i>
               <i></i>
             </div>
             <img src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
@@ -134,8 +130,6 @@
           <div class="templates-item">
             <div class="panel-browser">
               <i></i>
-              <i></i>
-              <i></i>
             </div>
             <img src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Mishka">
             <div class="templates-inner">
@@ -146,8 +140,6 @@
           </div>
           <div class="templates-item">
             <div class="panel-browser">
-              <i></i>
-              <i></i>
               <i></i>
             </div>
             <img src="img/catalog/img-aplus.jpg" width="360" height="576" alt="A plus">
@@ -160,8 +152,6 @@
           <div class="templates-item">
             <div class="panel-browser">
               <i></i>
-              <i></i>
-              <i></i>
             </div>
             <img src="img/catalog/img-kvast.jpg" width="360" height="576" alt="Кваст">
             <div class="templates-inner">
@@ -171,9 +161,9 @@
             </div>
           </div>
           <div class="pagination">
-            <a class="btn number active" href="#"><span>1</span></a>
-            <a class="btn number" href="#"><span>2</span></a>
-            <a class="btn number" href="#"><span>3</span></a>
+            <a class="pagination-item active" href="#"><span>1</span></a>
+            <a class="pagination-item" href="#"><span>2</span></a>
+            <a class="pagination-item" href="#"><span>3</span></a>
             <a class="btn next" href="#"><span>Следующая</span></a>
           </div>
         </section>
@@ -205,6 +195,17 @@
       <p class="social-sale">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Напишите нам</h2>
+    <form class="feedback" action="#" method="get">
+      <label class="surname-user"><span class="title-form">Ваше имя</span><input class="icon-surname-user" type="text" name="surname" placeholder="Представьтесь, пожалуйста"></label>
+      <label class="mail-user"><span class="title-form">Ваш e-mail:</span><input class="icon-mail-user" type="text" name="mail" placeholder="Для отправки ответа"></label>
+      <label class="message-user"><span class="title-form">Текст письма:</span><input class="icon-message-user" type="text" name="message" placeholder="В свободной форме"></label>
+      <button class="btn send" type="submit"><span>Отправить</span></button>
+    </form>
+  </div>
+  <div class="modal-overlay"></div>
 </body>
 
 </html>

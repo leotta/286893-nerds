@@ -39,10 +39,13 @@
         </div>
       </div>
       <div class="sliders">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
         </div>
         <div class="slides">
           <div class="slide">
@@ -169,16 +172,14 @@
   <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-content-title">Напишите нам</h2>
-    <p class="title-form">Ваше имя:</p>
     <form class="feedback" action="#" method="get">
-      <input class="icon-surname-user" type="text" name="surname" placeholder="Представьтесь, пожалуйста">
-      <p class="title-form">Ваш e-mail:</p>
-      <input class="icon-mail-user" type="text" name="mail" placeholder="Для отправки ответа">
-      <p class="title-form">Текст письма:</p>
-      <input class="icon-message-user" type="text" name="message" placeholder="В свободной форме">
+      <label class="surname-user"><span class="title-form">Ваше имя</span><input class="icon-surname-user" type="text" name="surname" placeholder="Представьтесь, пожалуйста"></label>
+      <label class="mail-user"><span class="title-form">Ваш e-mail:</span><input class="icon-mail-user" type="text" name="mail" placeholder="Для отправки ответа"></label>
+      <label class="message-user"><span class="title-form">Текст письма:</span><input class="icon-message-user" type="text" name="message" placeholder="В свободной форме"></label>
       <button class="btn send" type="submit"><span>Отправить</span></button>
     </form>
   </div>
+  <div class="modal-overlay"></div>
 </body>
 
 </html>
