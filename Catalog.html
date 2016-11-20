@@ -64,7 +64,7 @@
             <span class="filter-title">Сетка</span>
             <label class="grid"><input type="radio" name="question-one" value="Адаптивная" checked><span class="filter-items">Адаптивная</span></label>
             <label class="grid"><input type="radio" name="question-one" value="Фиксированная"><span class="filter-items">Фиксированная</span></label>
-            <label class="grid"><input type="radio" name="question-one" value="Резиновая"><span class="filter-items">Резиновая</span></label>
+            <label class="grid disabled"><input type="radio" name="question-one" value="Резиновая"><span class="filter-items disabled">Резиновая</span></label>
           </div>
           <div class="features-group">
             <span class="filter-title">Особенности</span>
@@ -173,7 +173,8 @@
   </main>
   <div class="wrap">
     <div class="map">
-      <img src="img/footer/map.jpg" width="1440" height="416" alt="карта">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.614665763124!2d30.320266216342265!3d59.93853598187611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sru!4v1479670241277"
+          width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="contacts-wrap container">
         <div class="contacts">
           <b>NЁRDS DESIGN STUDIO</b>
@@ -199,13 +200,14 @@
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-content-title">Напишите нам</h2>
     <form class="feedback" action="#" method="get">
-      <label class="surname-user"><span class="title-form">Ваше имя</span><input class="icon-surname-user" type="text" name="surname" placeholder="Представьтесь, пожалуйста"></label>
-      <label class="mail-user"><span class="title-form">Ваш e-mail:</span><input class="icon-mail-user" type="text" name="mail" placeholder="Для отправки ответа"></label>
-      <label class="message-user"><span class="title-form">Текст письма:</span><input class="icon-message-user" type="text" name="message" placeholder="В свободной форме"></label>
+      <label class="surname-user"><span class="title-form">Ваше имя</span><input class="icon-surname-user" type="text" name="surname" placeholder="Представьтесь, пожалуйста" required></label>
+      <label class="mail-user"><span class="title-form">Ваш e-mail:</span><input class="icon-mail-user" type="text" name="mail" placeholder="Для отправки ответа" required></label>
+      <label class="message-user"><span class="title-form">Текст письма:</span><input class="icon-message-user" type="text" name="message" placeholder="В свободной форме" required></label>
       <button class="btn send" type="submit"><span>Отправить</span></button>
     </form>
   </div>
   <div class="modal-overlay"></div>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

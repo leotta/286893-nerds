@@ -149,6 +149,7 @@ h2{
 
 .main-nav__link.active{
   border-bottom: 2px solid #fb565a;
+  padding-bottom: 5px;
 }
 
 .main-nav__item{
@@ -749,6 +750,10 @@ label span{
   color: #283136;
 }
 
+.filter-items:disabled{
+  opacity: .1;
+}
+
 .filter-items::before{
   content: "";
   width: 24px;
@@ -778,10 +783,6 @@ input[type="radio"]:checked:hover ~ .filter-items::after{
   opacity: 1;
 }
 
-input[type="radio"]:checked:active ~ .filter-items::after{
-  opacity: .1;
-}
-
 .features-group{
   margin-bottom: 45px;
 }
@@ -790,16 +791,12 @@ input[type="radio"]:checked:active ~ .filter-items::after{
   opacity: 1;
 }
 
-.grid:active .filter-items::before {
+.grid:disabled .filter-items::before {
   opacity: .1;
 }
 
 .grid:hover .filter-items {
   color: #000;
-}
-
-.grid:active .filter-items {
-  opacity: .3;
 }
 
 input[type="checkbox"]{
@@ -840,9 +837,6 @@ input[type="checkbox"]:checked + label::after{
 input[type="checkbox"] + label:hover::after,
 input[type="checkbox"]:checked + label:hover::after{
   opacity: 1;
-}
-.features-group label:active {
-  opacity: .1;
 }
 
 .features-group label:hover{
@@ -1041,7 +1035,7 @@ input[type="checkbox"]:checked + label:hover::after{
 .title{
   text-align: center;
   padding: 20px;
-  padding-top: 80px;
+  padding-top: 72px;
   padding-bottom: 105px;
 }
 
@@ -1127,6 +1121,10 @@ input[type="checkbox"]:checked + label:hover::after{
   padding-right: 100px;
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
   z-index: 50;
+}
+
+.modal-content-show {
+  display: block;
 }
 
 .modal-content-close {
