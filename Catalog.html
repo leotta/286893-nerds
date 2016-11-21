@@ -64,7 +64,7 @@
             <span class="filter-title">Сетка</span>
             <label class="grid"><input type="radio" name="question-one" value="Адаптивная" checked><span class="filter-items">Адаптивная</span></label>
             <label class="grid"><input type="radio" name="question-one" value="Фиксированная"><span class="filter-items">Фиксированная</span></label>
-            <label class="grid disabled"><input type="radio" name="question-one" value="Резиновая"><span class="filter-items disabled">Резиновая</span></label>
+            <label class="grid"><input type="radio" disabled name="question-one" value="Резиновая"><span class="filter-items" disabled>Резиновая</span></label>
           </div>
           <div class="features-group">
             <span class="filter-title">Особенности</span>
@@ -76,7 +76,7 @@
             <label for="news-field">Новости</label>
             <input type="checkbox" name="gallery" id="gallery-field">
             <label for="gallery-field">Галерея</label>
-            <input type="checkbox" name="basket" id="basket-field">
+            <input type="checkbox" name="basket" id="basket-field" disabled>
             <label for="basket-field">Корзина</label>
           </div>
           <button class="btn filter-btn" type="submit"><span>Показать</span></button>
@@ -98,10 +98,10 @@
             <div class="panel-browser">
               <i></i>
             </div>
-            <img src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona">
+            <img class="images" src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona">
             <div class="templates-inner">
               <a class="title-templates" href="#">Sedona</a>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <a class="btn templates" href="#"><span>9 900 руб.</span></a>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <div class="panel-browser">
               <i></i>
             </div>
-            <img src="img/catalog/img-pink.jpg" width="360" height="576" alt="Pink">
+            <img class="images" src="img/catalog/img-pink.jpg" width="360" height="576" alt="Pink">
             <div class="templates-inner">
               <a class="title-templates" href="#">Pink App</a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -120,10 +120,10 @@
             <div class="panel-browser">
               <i></i>
             </div>
-            <img src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+            <img class="images" src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
             <div class="templates-inner">
               <a class="title-templates" href="#">Barbershop</a>
-              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <p>Сайт салоны красоты. Для&nbsp;мужчин, да.</p>
               <a class="btn templates" href="#"><span>9 900 руб.</span></a>
             </div>
           </div>
@@ -131,10 +131,10 @@
             <div class="panel-browser">
               <i></i>
             </div>
-            <img src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Mishka">
+            <img class="images" src="img/catalog/img-mishka.jpg" width="360" height="576" alt="Mishka">
             <div class="templates-inner">
               <a class="title-templates" href="#">Mishka</a>
-              <p>Интернет-магазин вязаных игрушек</p>
+              <p>Интернет-магазин вязаных&nbsp;игрушек</p>
               <a class="btn templates" href="#"><span>9 900 руб.</span></a>
             </div>
           </div>
@@ -142,7 +142,7 @@
             <div class="panel-browser">
               <i></i>
             </div>
-            <img src="img/catalog/img-aplus.jpg" width="360" height="576" alt="A plus">
+            <img class="images" src="img/catalog/img-aplus.jpg" width="360" height="576" alt="A plus">
             <div class="templates-inner">
               <a class="title-templates" href="#">A plus</a>
               <p>Лендинг курсов повышения квалификации</p>
@@ -153,7 +153,7 @@
             <div class="panel-browser">
               <i></i>
             </div>
-            <img src="img/catalog/img-kvast.jpg" width="360" height="576" alt="Кваст">
+            <img class="images" src="img/catalog/img-kvast.jpg" width="360" height="576" alt="Кваст">
             <div class="templates-inner">
               <a class="title-templates" href="#">Кваст</a>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -200,9 +200,9 @@
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-content-title">Напишите нам</h2>
     <form class="feedback" action="#" method="get">
-      <label class="surname-user"><span class="title-form">Ваше имя</span><input class="icon-surname-user" type="text" name="surname" placeholder="Представьтесь, пожалуйста" required></label>
-      <label class="mail-user"><span class="title-form">Ваш e-mail:</span><input class="icon-mail-user" type="text" name="mail" placeholder="Для отправки ответа" required></label>
-      <label class="message-user"><span class="title-form">Текст письма:</span><input class="icon-message-user" type="text" name="message" placeholder="В свободной форме" required></label>
+      <label class="surname-user"><span class="title-form">Ваше имя</span><input class="icon-surname-user" type="text" name="surname" placeholder="Представьтесь, пожалуйста"></label>
+      <label class="mail-user"><span class="title-form">Ваш e-mail:</span><input class="icon-mail-user" type="text" name="mail" placeholder="Для отправки ответа"></label>
+      <label class="message-user"><span class="title-form">Текст письма:</span><textarea class="icon-message-user" placeholder="В свободной форме"></textarea></label>
       <button class="btn send" type="submit"><span>Отправить</span></button>
     </form>
   </div>
