@@ -764,7 +764,9 @@ label span{
 }
 
 input[type="radio"]:disabled + .filter-items,
-input[type="checkbox"]:disabled + label{
+input[type="checkbox"]:disabled + label
+input[type="checkbox"]:disabled + label::after,
+input[type="checkbox"]:disabled + label:hover::after{
   opacity: .1;
 }
 
@@ -801,11 +803,11 @@ input[type="radio"]:checked:hover ~ .filter-items::after{
   margin-bottom: 45px;
 }
 
-.grid:hover .filter-items::before {
+.grid:hover .filter-items::before{
   opacity: 1;
 }
 
-.grid:hover .filter-items {
+.grid:hover .filter-items{
   color: #000;
 }
 
@@ -1173,11 +1175,11 @@ input[type="checkbox"]:checked + label:hover::after{
   border-radius: 1px;
 }
 
-.modal-content-close::before {
+.modal-content-close::before{
   transform: rotate(45deg);
 }
 
-.modal-content-close::after {
+.modal-content-close::after{
   transform: rotate(-45deg);
 }
 
@@ -1223,14 +1225,14 @@ input[type="checkbox"]:checked + label:hover::after{
 }
 
 .feedback input[type="text"]:focus {
-   border: 2px solid #000;
-   opacity: 1;
+  border: 2px solid #000;
+  opacity: 1;
   }
 
-.feedback input[type="text"]:invalid {
-   border: 2px solid #e74246;
-   opacity: 1;
-  }
+.feedback input[type="text"]:invalid{
+  border: 2px solid #e74246;
+  opacity: 1;
+}
 
 .feedback .icon-message-user{
   margin-bottom: 45px;
@@ -1249,7 +1251,7 @@ input[type="checkbox"]:checked + label:hover::after{
   margin-right: 36px;
 }
 
-.modal-overlay {
+.modal-overlay{
   display: none;
   position: fixed;
   top: 0;
