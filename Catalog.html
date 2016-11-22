@@ -6,7 +6,7 @@
   <title>Catalog Nёrd's</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -64,7 +64,7 @@
             <span class="filter-title">Сетка</span>
             <label class="grid"><input type="radio" name="question-one" value="Адаптивная" checked><span class="filter-items">Адаптивная</span></label>
             <label class="grid"><input type="radio" name="question-one" value="Фиксированная"><span class="filter-items">Фиксированная</span></label>
-            <label class="grid"><input type="radio" disabled name="question-one" value="Резиновая"><span class="filter-items" disabled>Резиновая</span></label>
+            <label class="grid"><input type="radio" disabled name="question-one" value="Резиновая"><span class="filter-items">Резиновая</span></label>
           </div>
           <div class="features-group">
             <span class="filter-title">Особенности</span>
@@ -123,7 +123,7 @@
             <img class="images" src="img/catalog/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
             <div class="templates-inner">
               <a class="title-templates" href="#">Barbershop</a>
-              <p>Сайт салоны красоты. Для&nbsp;мужчин, да.</p>
+              <p>Сайт салоны красоты. Для&nbsp;мужчин, да.</p>
               <a class="btn templates" href="#"><span>9 900 руб.</span></a>
             </div>
           </div>
@@ -160,21 +160,20 @@
               <a class="btn templates" href="#"><span>9 900 руб.</span></a>
             </div>
           </div>
-          <div class="pagination">
-            <a class="pagination-item active" href="#"><span>1</span></a>
-            <a class="pagination-item" href="#"><span>2</span></a>
-            <a class="pagination-item" href="#"><span>3</span></a>
-            <a class="btn next" href="#"><span>Следующая</span></a>
-          </div>
         </section>
+        <div class="pagination">
+          <a class="pagination-item active" href="#"><span>1</span></a>
+          <a class="pagination-item" href="#"><span>2</span></a>
+          <a class="pagination-item" href="#"><span>3</span></a>
+          <a class="btn next" href="#"><span>Следующая</span></a>
+        </div>
       </div>
-    </div>
     </div>
   </main>
   <div class="wrap">
     <div class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.614665763124!2d30.320266216342265!3d59.93853598187611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sru!4v1479670241277"
-          width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+          height="416" allowfullscreen></iframe>
       <div class="contacts-wrap container">
         <div class="contacts">
           <b>NЁRDS DESIGN STUDIO</b>
@@ -206,8 +205,7 @@
       <button class="btn send" type="submit"><span>Отправить</span></button>
     </form>
   </div>
-  <div class="modal-overlay"></div>
-  <script src="js/popup.js"></script>
+  <script src="js/popup.min.js"></script>
 </body>
 
 </html>

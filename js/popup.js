@@ -22,7 +22,6 @@
   form.addEventListener("submit", function(event) {
     if (!surname.value || !mail.value) {
       event.preventDefault();
-      console.log("Нужно ввести имя и e-mail");
     } else {
       localStorage.setItem("surname", surname.value);
     }
