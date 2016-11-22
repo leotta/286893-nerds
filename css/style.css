@@ -763,13 +763,6 @@ label span{
   color: #283136;
 }
 
-input[type="radio"]:disabled + .filter-items,
-input[type="checkbox"]:disabled + label
-input[type="checkbox"]:disabled + label::after,
-input[type="checkbox"]:disabled + label:hover::after{
-  opacity: .1;
-}
-
 .filter-items::before{
   content: "";
   width: 24px;
@@ -849,6 +842,13 @@ input[type="checkbox"]:checked + label::after{
 input[type="checkbox"] + label:hover::after,
 input[type="checkbox"]:checked + label:hover::after{
   opacity: 1;
+}
+
+input[type="radio"]:disabled + .filter-items,
+input[type="checkbox"]:disabled + label
+input[type="checkbox"]:disabled + label::after,
+input[type="checkbox"]:disabled + label:hover::after{
+  opacity: .1;
 }
 
 .features-group label:hover{
@@ -1236,11 +1236,30 @@ input[type="checkbox"]:checked + label:hover::after{
 
 .feedback .icon-message-user{
   margin-bottom: 45px;
+  padding: 15px;
+  width: 760px;
+  min-height: 118px;
+  color: #444444;
+  border: 2px solid #d7dcde;
+  outline: none;
 }
 
-.feedback input[class="icon-message-user"]{
-  width: 760px;
-  height: 118px;
+.feedback .icon-message-user:hover{
+  border: 2px solid #b4b9bb;
+}
+
+.feedback .icon-message-user:focus{
+  border: 2px solid #000;
+  opacity: 1;
+}
+
+.feedback .icon-message-user:active{
+  border: 2px solid #000;
+}
+
+.feedback .icon-message-user:invalid{
+  border: 2px solid #e74246;
+  opacity: 1;
 }
 
 .message-user{
