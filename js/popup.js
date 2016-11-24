@@ -18,10 +18,14 @@
   close.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.remove("modal-content-show");
+    popup.classList.remove("modal-error");
   });
   form.addEventListener("submit", function(event) {
     if (!surname.value || !mail.value) {
       event.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
     } else {
       localStorage.setItem("surname", surname.value);
     }
@@ -30,6 +34,7 @@
     if (event.keyCode === 27) {
       if (popup.classList.contains("modal-content-show")) {
         popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
       }
     }
   });
