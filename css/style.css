@@ -1501,7 +1501,7 @@ input[type='checkbox']:disabled + label:hover::after
 
 .modal-content
 {
-    position: absolute;
+    position: fixed;
     z-index: 50;
     bottom: 180px;
     left: 50%;
